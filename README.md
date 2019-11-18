@@ -5,6 +5,15 @@
 Create a new virtualenv & run `pip install -r requirements.txt` to install the
 dependencies.
 
+```
+git clone git@github.com:moser/tdd-tic-tac-toe-stub.git
+cd tdd-tic-tac-toe-stub/
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade wheel pip setuptools
+pip install -r requirements.txt
+```
+
 ## Running
 
 Run `make` to continously run the tests, `make test` to run tests once, `make run`
