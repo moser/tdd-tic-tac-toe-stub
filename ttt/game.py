@@ -5,16 +5,15 @@ def main(stdin, stdout):
         msg = msg + " " + repr(args)
         stdout.write(msg + "\n")
     def inpt(prompt):
-        stdout.write(prompt + " ")
+        stdout.write(prompt + "\n")
         return stdin.readline().strip()
 
-    exit = False
-    while not exit:
+    while True:
         user_input = inpt("Ask player X for input:")
-        prnt("Player entered:", user_input)
         # TODO: Now do something with the input?
         if user_input == "exit":
-            exit = True
+            break
+        prnt("Player entered:", user_input)
 
 
 if __name__ == "__main__":
